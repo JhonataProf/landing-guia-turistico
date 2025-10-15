@@ -1,0 +1,152 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Guia Turístico — Pontos turísticos da cidade de Dourados</title>
+  <meta name="description" content="Descubra atrações imperdíveis, roteiros, mapas e dicas locais. Uma landing page rápida, acessível e otimizada para SEO.">
+  <link rel="canonical" href="https://www.exemplo.com/">
+  <!-- Open Graph -->
+  <meta property="og:title" content="Guia Turístico — Pontos turísticos imperdíveis">
+  <meta property="og:description" content="Explore atrações, roteiros e mapas interativos desta cidade.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.exemplo.com/">
+  <meta property="og:image" content="https://www.exemplo.com/assets/img/og-cover.jpg">
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Guia Turístico — Pontos turísticos imperdíveis">
+  <meta name="twitter:description" content="Explore atrações, roteiros e mapas interativos desta cidade.">
+  <meta name="twitter:image" content="https://www.exemplo.com/assets/img/og-cover.jpg">
+  <!-- Icons -->
+  <link rel="icon" href="/assets/icons/favicon.ico">
+  <link rel="apple-touch-icon" href="/assets/icons/apple-touch-icon.png">
+  <meta name="theme-color" content="#0b3d91">
+  <!-- Styles -->
+  <link rel="stylesheet" href="/css/styles.css">
+  <!-- JSON-LD: Site & Organization -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "Guia Turístico da Cidade",
+    "url": "https://www.exemplo.com/",
+    "potentialAction": {
+      "@type": "SearchAction",
+      "target": "https://www.exemplo.com/?q={search_term_string}",
+      "query-input": "required name=search_term_string"
+    }
+  }
+  </script>
+</head>
+<body>
+  <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+  <header class="site-header" role="banner">
+    <nav class="nav" aria-label="Principal">
+      <a class="brand" href="/" aria-label="Página inicial: Guia Turístico">Guia Turístico</a>
+      <button id="btnTema" class="btn" aria-pressed="false" aria-label="Alternar tema">Tema</button>
+      <form id="buscaForm" role="search" aria-label="Buscar atrações" class="search">
+        <label for="busca" class="sr-only">Buscar atrações</label>
+        <input id="busca" name="q" type="search" placeholder="Buscar atrações, praças, museus..." autocomplete="off" />
+        <button class="btn" type="submit">Buscar</button>
+      </form>
+    </nav>
+  </header>
+
+  <main id="conteudo" tabindex="-1">
+    <section class="hero" aria-label="Destaque">
+      <div class="hero__text container">
+        <h1>Descubra os melhores pontos turísticos da cidade</h1>
+        <p>Roteiros prontos, dicas locais, mapas e fotos. Planeje a sua visita com poucos cliques.</p>
+        <a class="btn btn-primary" href="#atracoes">Ver atrações</a>
+      </div>
+      <picture>
+        <source media="(min-width: 768px)" srcset="/assets/img/hero-large.jpg">
+        <img src="/assets/img/hero-small.jpg" alt="Vista panorâmica da cidade ao pôr do sol" loading="eager" decoding="async">
+      </picture>
+    </section>
+
+    <section id="atracoes" class="container" aria-labelledby="titulo-atracoes">
+      <div class="toolbar">
+        <h2 id="titulo-atracoes">Atrações populares</h2>
+        <div class="filters">
+          <label>
+            Categoria
+            <select id="filtroCategoria" aria-label="Filtrar por categoria">
+              <option value="">Todas</option>
+              <option value="museu">Museu</option>
+              <option value="parque">Parque</option>
+              <option value="historia">História</option>
+              <option value="gastronomia">Gastronomia</option>
+            </select>
+          </label>
+          <label>
+            Ordenar
+            <select id="ordenarPor" aria-label="Ordenar por">
+              <option value="relevancia">Relevância</option>
+              <option value="avaliacao">Avaliação</option>
+              <option value="distancia">Distância</option>
+            </select>
+          </label>
+        </div>
+      </div>
+
+      <ul id="listaAtracoes" class="grid" aria-live="polite">
+      </ul>
+
+      <template id="cardTemplate">
+        <li class="card fade-in" itemscope itemtype="https://schema.org/TouristAttraction">
+          <a class="card__media" href="#" itemprop="url">
+            <img itemprop="image" src="" alt="" loading="lazy" decoding="async" />
+          </a>
+          <div class="card__body">
+            <h3 itemprop="name" class="card__title"></h3>
+            <p class="card__desc" itemprop="description"></p>
+            <dl class="card__meta">
+              <div><dt>Categoria:</dt><dd class="categoria"></dd></div>
+              <div><dt>Avaliação:</dt><dd class="avaliacao" aria-label="avaliação em estrelas"></dd></div>
+              <div><dt>Endereço:</dt><dd class="endereco" itemprop="address"></dd></div>
+            </dl>
+            <div class="card__actions">
+              <a class="btn btn-outline" target="_blank" rel="noopener" href="#" aria-label="Abrir no mapa">Mapa</a>
+              <button class="btn btn-secondary" data-acao="favoritar" aria-pressed="false">Favoritar</button>
+            </div>
+          </div>
+        </li>
+      </template>
+    </section>
+
+    <section class="cta container" aria-label="Roteiros rápidos">
+      <h2>Roteiros prontos</h2>
+      <p>Temos sugestões de 1 dia, fim de semana e 3 dias para você aproveitar o melhor da cidade.</p>
+      <a class="btn btn-primary" href="#rota">Ver roteiros</a>
+    </section>
+
+    <section id="faq" class="container" aria-label="Perguntas frequentes">
+      <h2>Perguntas frequentes</h2>
+      <details>
+        <summary>Qual a melhor época para visitar?</summary>
+        <p>Depende do seu estilo — climas amenos e festas locais costumam ocorrer entre abril e agosto.</p>
+      </details>
+      <details>
+        <summary>Como me locomover na cidade?</summary>
+        <p>Há opções de transporte público, aplicativos e bicicletas compartilhadas nas regiões turísticas.</p>
+      </details>
+    </section>
+  </main>
+
+  <footer class="site-footer" role="contentinfo">
+    <div class="container footer__grid">
+      <small>&copy; <span id="anoAtual"></span> Guia Turístico. Todos os direitos reservados.</small>
+      <nav aria-label="Rodapé">
+        <ul class="inline">
+          <li><a href="#faq">FAQ</a></li>
+          <li><a href="/politica-privacidade.html">Privacidade</a></li>
+          <li><a href="/termos.html">Termos</a></li>
+        </ul>
+      </nav>
+    </div>
+  </footer>
+
+  <script type="module" src="/js/script.js" defer></script>
+</body>
+</html>
