@@ -3,20 +3,20 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Guia Turístico — Pontos turísticos da cidade de Dourados</title>
-  <meta name="description" content="Descubra atrações imperdíveis, roteiros, mapas e dicas locais. Uma landing page rápida, acessível e otimizada para SEO.">
-  <link rel="canonical" href="  ">
+  <title>Guia Turístico — Pontos turísticos de Dourados, MS</title>
+  <meta name="description" content="Descubra atrações, roteiros e mapas para visitar Dourados-MS: parques, praças, eventos e gastronomia local.">
+  <link rel="canonical" href="https://www.seudominio.com/">
   <!-- Open Graph -->
-  <meta property="og:title" content="Guia Turístico — Pontos turísticos imperdíveis">
-  <meta property="og:description" content="Explore atrações, roteiros e mapas interativos desta cidade.">
+  <meta property="og:title" content="Guia Turístico — Dourados, MS">
+  <meta property="og:description" content="Explore os principais pontos turísticos de Dourados-MS com mapas e dicas.">
   <meta property="og:type" content="website">
-  <meta property="og:url" content="https://www.exemplo.com/">
-  <meta property="og:image" content="https://www.exemplo.com/assets/img/og-cover.jpg">
+  <meta property="og:url" content="https://www.seudominio.com/">
+  <meta property="og:image" content="https://upload.wikimedia.org/wikipedia/commons/5/5a/Imagem_a%C3%A9rea_de_Dourados_-_2019.jpg">
   <!-- Twitter -->
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Guia Turístico — Pontos turísticos imperdíveis">
-  <meta name="twitter:description" content="Explore atrações, roteiros e mapas interativos desta cidade.">
-  <meta name="twitter:image" content="https://www.exemplo.com/assets/img/og-cover.jpg">
+  <meta name="twitter:title" content="Guia Turístico — Dourados, MS">
+  <meta name="twitter:description" content="Explore os principais pontos turísticos de Dourados-MS com mapas e dicas.">
+  <meta name="twitter:image" content="https://upload.wikimedia.org/wikipedia/commons/5/5a/Imagem_a%C3%A9rea_de_Dourados_-_2019.jpg">
   <!-- Icons -->
   <link rel="icon" href="/assets/icons/favicon.ico">
   <link rel="apple-touch-icon" href="/assets/icons/apple-touch-icon.png">
@@ -28,11 +28,11 @@
   {
     "@context": "https://schema.org",
     "@type": "WebSite",
-    "name": "Guia Turístico da Cidade",
-    "url": "https://www.exemplo.com/",
+    "name": "Guia Turístico de Dourados",
+    "url": "https://www.seudominio.com/",
     "potentialAction": {
       "@type": "SearchAction",
-      "target": "https://www.exemplo.com/?q={search_term_string}",
+      "target": "https://www.seudominio.com/?q={search_term_string}",
       "query-input": "required name=search_term_string"
     }
   }
@@ -55,19 +55,18 @@
   <main id="conteudo" tabindex="-1">
     <section class="hero" aria-label="Destaque">
       <div class="hero__text container">
-        <h1>Descubra os melhores pontos turísticos da cidade</h1>
-        <p>Roteiros prontos, dicas locais, mapas e fotos. Planeje a sua visita com poucos cliques.</p>
+        <h1>Descubra Dourados — MS</h1>
+        <p>Pontos turísticos, roteiros rápidos e mapas para explorar a cidade.</p>
         <a class="btn btn-primary" href="#atracoes">Ver atrações</a>
       </div>
       <picture>
-        <source media="(min-width: 768px)" srcset="/assets/img/hero-large.jpg">
-        <img src="/assets/img/hero-small.jpg" alt="Vista panorâmica da cidade ao pôr do sol" loading="eager" decoding="async">
+        <img src="https://cdn.douradosnews.com.br/img/c/780/530/dn_arquivo/2025/10/dourados-aereas-franzmendes-1.jpeg" alt="Imagem aérea de Dourados-MS" loading="eager" decoding="async">
       </picture>
     </section>
 
     <section id="atracoes" class="container" aria-labelledby="titulo-atracoes">
       <div class="toolbar">
-        <h2 id="titulo-atracoes">Atrações populares</h2>
+        <h2 id="titulo-atracoes">Atrações populares em Dourados</h2>
         <div class="filters">
           <label>
             Categoria
@@ -77,6 +76,7 @@
               <option value="parque">Parque</option>
               <option value="historia">História</option>
               <option value="gastronomia">Gastronomia</option>
+              <option value="religioso">Religioso</option>
             </select>
           </label>
           <label>
@@ -90,8 +90,7 @@
         </div>
       </div>
 
-      <ul id="listaAtracoes" class="grid" aria-live="polite">
-      </ul>
+      <ul id="listaAtracoes" class="grid" aria-live="polite"></ul>
 
       <template id="cardTemplate">
         <li class="card fade-in" itemscope itemtype="https://schema.org/TouristAttraction">
@@ -117,31 +116,32 @@
 
     <section class="cta container" aria-label="Roteiros rápidos">
       <h2>Roteiros prontos</h2>
-      <p>Temos sugestões de 1 dia, fim de semana e 3 dias para você aproveitar o melhor da cidade.</p>
-      <a class="btn btn-primary" href="#rota">Ver roteiros</a>
+      <p>Sugestões para 1 dia e fim de semana aproveitando parques, praças e gastronomia.</p>
+      <a class="btn btn-primary" href="#atracoes">Começar</a>
     </section>
 
     <section id="faq" class="container" aria-label="Perguntas frequentes">
       <h2>Perguntas frequentes</h2>
       <details>
-        <summary>Qual a melhor época para visitar?</summary>
-        <p>Depende do seu estilo — climas amenos e festas locais costumam ocorrer entre abril e agosto.</p>
+        <summary>Qual a melhor época para visitar Dourados?</summary>
+        <p>Meses com clima ameno e eventos locais ocorrem tipicamente entre abril e agosto.</p>
       </details>
       <details>
         <summary>Como me locomover na cidade?</summary>
-        <p>Há opções de transporte público, aplicativos e bicicletas compartilhadas nas regiões turísticas.</p>
+        <p>Transporte público, aplicativos de mobilidade e locação de veículos estão disponíveis nas áreas centrais.</p>
       </details>
     </section>
   </main>
 
   <footer class="site-footer" role="contentinfo">
     <div class="container footer__grid">
-      <small>&copy; <span id="anoAtual"></span> Guia Turístico. Todos os direitos reservados.</small>
+      <small>&copy; <span id="anoAtual"></span> Guia Turístico de Dourados. Todos os direitos reservados.</small>
       <nav aria-label="Rodapé">
         <ul class="inline">
-          <li><a href="#faq">FAQ</a></li>
           <li><a href="/politica-privacidade.html">Privacidade</a></li>
           <li><a href="/termos.html">Termos</a></li>
+          <li><a href="/creditos.html">Créditos</a></li>
+          <li><a href="#faq">FAQ</a></li>
         </ul>
       </nav>
     </div>
