@@ -35,7 +35,7 @@ const dadosAtracoes = [
     "descricao": "Parque linear urbano com ciclovia e áreas de descanso ao longo do córrego.",
     "nota": 4.6,
     "endereco": "Vila Bela — Dourados, MS",
-    "imagem": "https://upload.wikimedia.org/wikipedia/commons/9/96/Dourados_-_Parque_dos_Ip%C3%AAs.jpg",
+    "imagem": "https://cdn.progresso.com.br/img/pc/780/530/dn_arquivo/2024/03/e144d391-cd8c-421a-81ac-2580cf3ca528.jpg",
     "mapa": "https://maps.google.com/?q=Parque%20Ambiental%20Primo%20Fioravante%20Dourados",
     "geo": {
       "lat": -22.2245,
@@ -49,7 +49,7 @@ const dadosAtracoes = [
     "descricao": "Igreja matriz de Dourados, com celebrações e eventos da Diocese.",
     "nota": 4.6,
     "endereco": "Rua João Cândido da Câmara, 400 — Centro, Dourados, MS",
-    "imagem": "https://upload.wikimedia.org/wikipedia/commons/5/5c/Pra%C3%A7a_Ant%C3%B4nio_Jo%C3%A3o_111409.jpg",
+    "imagem": "https://www.94fmdourados.com.br/uploads/images/news/88601/379dba6199d9986e77b272c75adee08f.jpg",
     "mapa": "https://maps.google.com/?q=Catedral%20Imaculada%20Concei%C3%A7%C3%A3o%20Dourados",
     "geo": {
       "lat": -22.221,
@@ -63,7 +63,7 @@ const dadosAtracoes = [
     "descricao": "Feira central com comidas típicas, produtos locais e eventos sazonais.",
     "nota": 4.5,
     "endereco": "Rua Cafelândia — Jardim São Pedro, Dourados, MS",
-    "imagem": "https://upload.wikimedia.org/wikipedia/commons/9/96/Dourados_-_Parque_dos_Ip%C3%AAs.jpg",
+    "imagem": "https://cdn.douradosnews.com.br/img/c/780/530/dn_arquivo/2020/12/feira-11_1.jpg",
     "mapa": "https://maps.google.com/?q=Feira%20Central%20Jo%C3%A3o%20Tot%C3%B3%20C%C3%A2mara%20Dourados",
     "geo": {
       "lat": -22.2078,
@@ -77,7 +77,7 @@ const dadosAtracoes = [
     "descricao": "Espaço dedicado à memória e cultura da região (confira horários).",
     "nota": 4.2,
     "endereco": "Centro — Dourados, MS",
-    "imagem": "https://upload.wikimedia.org/wikipedia/commons/9/96/Dourados_-_Parque_dos_Ip%C3%AAs.jpg",
+    "imagem": "https://cdn.douradosnews.com.br/img/c/780/530/dn_arquivo/2023/07/unnamed-2023-07-05t133607969.jpg",
     "mapa": "https://maps.google.com/?q=Museu%20Hist%C3%B3rico%20Municipal%20Dourados",
     "geo": {
       "lat": -22.22,
